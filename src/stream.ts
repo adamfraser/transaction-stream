@@ -18,9 +18,7 @@ const init = () => {
       await provider
         .getTransaction(tx)
         .then((txResponse) => {
-          if (txResponse) {
-            console.log(txResponse.hash);
-          }
+          console.log(txResponse.hash);
         })
         .catch((error) => {
           handleError(error);
